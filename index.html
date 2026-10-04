@@ -237,6 +237,10 @@
       color:var(--muted);
     }
 
+    .project-title{
+      min-width:0;
+    }
+
     .project h3{
       margin:0;
       font-family:"Newsreader",Georgia,serif;
@@ -244,6 +248,30 @@
       line-height:1.03;
       font-weight:300;
       letter-spacing:-.028em;
+    }
+
+    .project-links{
+      display:flex;
+      flex-wrap:wrap;
+      gap:8px 16px;
+      margin-top:12px;
+    }
+
+    .project-links a{
+      font-size:11px;
+      line-height:1.3;
+      letter-spacing:.13em;
+      text-transform:uppercase;
+      text-decoration:none;
+      color:var(--muted);
+      border-bottom:1px solid #c8c8c3;
+      padding-bottom:2px;
+      transition:color .2s ease,border-color .2s ease;
+    }
+
+    .project-links a:hover{
+      color:var(--ink);
+      border-color:var(--ink);
     }
 
     .project p{
@@ -640,7 +668,12 @@
 
         <article class="project">
           <div class="project-no">01</div>
-          <h3>Ecology of Attention — 2026</h3>
+          <div class="project-title">
+            <h3>Ecology of Attention — 2026</h3>
+            <div class="project-links">
+              <a href="https://drive.google.com/file/d/1itXv3uo4wjOY84ZYmovK4bQf9oAMlr5_/view" target="_blank" rel="noopener noreferrer">Watch video ↗</a>
+            </div>
+          </div>
           <p>
             Participatory performance and adaptive exhibition exploring attention,
             perception and physiological response through live piano and sensory systems.
@@ -649,7 +682,13 @@
 
         <article class="project">
           <div class="project-no">02</div>
-          <h3>Musical Portraits — 2022–2026</h3>
+          <div class="project-title">
+            <h3>Musical Portraits — 2022–2026</h3>
+            <div class="project-links">
+              <a href="https://drive.google.com/file/d/1KOrwNL0JkCaKalnmaVbTky66tYZ8xL1h/view" target="_blank" rel="noopener noreferrer">Video ↗</a>
+              <a href="https://www.instagram.com/p/DahqXYkjBzt/" target="_blank" rel="noopener noreferrer">Instagram ↗</a>
+            </div>
+          </div>
           <p>
             One encounter. One person. One unique improvised composition created
             through observation, presence and live piano.
@@ -658,7 +697,9 @@
 
         <article class="project">
           <div class="project-no">03</div>
-          <h3>Neuro Piano — 2023–2026</h3>
+          <div class="project-title">
+            <h3>Neuro Piano — 2023–2026</h3>
+          </div>
           <p>
             A piano-based practice combining bilateral movement, attention,
             coordination and musical training.
@@ -667,7 +708,12 @@
 
         <article class="project">
           <div class="project-no">04</div>
-          <h3>Appeltaart met Slagroom — 2019–2026</h3>
+          <div class="project-title">
+            <h3>Appeltaart met Slagroom — 2019–2026</h3>
+            <div class="project-links">
+              <a href="https://www.youtube.com/watch?v=WpmS2czP_2Y" target="_blank" rel="noopener noreferrer">YouTube ↗</a>
+            </div>
+          </div>
           <p>
             A contemporary performance format where music, storytelling and human
             contact meet in an intimate setting.
@@ -676,7 +722,9 @@
 
         <article class="project">
           <div class="project-no">05</div>
-          <h3>Composer Practice in Theatre — 2017–2026</h3>
+          <div class="project-title">
+            <h3>Composer Practice in Theatre — 2017–2026</h3>
+          </div>
           <p>
             Composing and developing original music for theatre, with a focus on
             dramaturgy, atmosphere, timing and the relationship between sound and stage action.
@@ -685,7 +733,9 @@
 
         <article class="project">
           <div class="project-no">06</div>
-          <h3>Neuro Piano Research — 2011–2026</h3>
+          <div class="project-title">
+            <h3>Neuro Piano Research — 2011–2026</h3>
+          </div>
           <p>
             Long-term artistic and practical research into piano, bilateral movement,
             attention, coordination, perception and musical learning.
@@ -694,7 +744,12 @@
 
         <article class="project">
           <div class="project-no">07</div>
-          <h3>Composer Work with Contemporary Ballet — 2025–2026</h3>
+          <div class="project-title">
+            <h3>Composer Work with Contemporary Ballet — 2025–2026</h3>
+            <div class="project-links">
+              <a href="https://www.instagram.com/andrsoncarvalho/p/DJ5_kYesvYf/?hl=zh-cn&img_index=3" target="_blank" rel="noopener noreferrer">Dance theatre ↗</a>
+            </div>
+          </div>
           <p>
             Original composition and live musical collaboration with contemporary ballet,
             exploring movement, structure, embodiment and the dialogue between piano and dance.
