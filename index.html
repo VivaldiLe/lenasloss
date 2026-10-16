@@ -103,29 +103,19 @@
     }
 
     section{
-      padding:clamp(82px,9vw,128px) 0;
+      padding:clamp(48px,6vw,76px) 0;
       border-bottom:1px solid var(--line);
     }
 
     .section-head{
-      display:grid;
-      grid-template-columns:64px 1fr;
-      gap:22px;
-      margin-bottom:clamp(44px,5.5vw,72px);
+      display:block;
+      margin-bottom:clamp(30px,4vw,48px);
     }
 
-    .number,
     .section-label{
       font-size:12px;
       letter-spacing:.16em;
       text-transform:uppercase;
-    }
-
-    .number{
-      color:var(--muted);
-    }
-
-    .section-label{
       font-weight:500;
     }
 
@@ -518,16 +508,14 @@
       }
 
       section{
-        padding:66px 0;
+        padding:44px 0;
       }
 
       .section-head{
-        grid-template-columns:44px minmax(0,1fr);
-        gap:14px;
-        margin-bottom:38px;
+        display:block;
+        margin-bottom:28px;
       }
 
-      .number,
       .section-label{
         font-size:11px;
       }
@@ -694,11 +682,6 @@
     </section>
 
     <section id="statement">
-      <div class="section-head">
-        <div class="number">02</div>
-        <div class="section-label">Statement</div>
-      </div>
-
       <div class="statement-layout">
         <div class="keywords">
           Piano<br>
@@ -716,7 +699,6 @@
 
     <section id="projects">
       <div class="section-head">
-        <div class="number">03</div>
         <div class="section-label">Selected Projects</div>
       </div>
 
@@ -817,7 +799,6 @@
 
     <section id="gallery">
       <div class="section-head">
-        <div class="number">04</div>
         <div class="section-label">Gallery</div>
       </div>
 
@@ -890,7 +871,6 @@
 
     <section id="contact">
       <div class="section-head">
-        <div class="number">05</div>
         <div class="section-label">Contact</div>
       </div>
 
