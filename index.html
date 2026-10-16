@@ -143,23 +143,32 @@
       overflow:hidden;
     }
 
-    .hero::before{
-      content:"";
+    .hero-art{
       position:absolute;
       z-index:0;
       top:50%;
       right:-2%;
       width:min(60vw,780px);
-      aspect-ratio:3 / 1;
       transform:translateY(-48%);
-      background:
-        linear-gradient(90deg,rgba(255,255,255,1) 0%,rgba(255,255,255,.84) 11%,rgba(255,255,255,.18) 34%,rgba(255,255,255,0) 52%),
-        url("hero-lena-sloss-red.webp?v=20261016a") center / cover no-repeat;
-      opacity:.88;
       pointer-events:none;
+      overflow:hidden;
     }
 
-    .hero > *{
+    .hero-art img{
+      width:100%;
+      height:auto;
+      display:block;
+      opacity:.94;
+    }
+
+    .hero-art::after{
+      content:"";
+      position:absolute;
+      inset:0;
+      background:linear-gradient(90deg,rgba(255,255,255,1) 0%,rgba(255,255,255,.78) 12%,rgba(255,255,255,.12) 34%,rgba(255,255,255,0) 56%);
+    }
+
+    .hero > :not(.hero-art){
       position:relative;
       z-index:1;
     }
@@ -531,17 +540,20 @@
         padding-bottom:250px;
       }
 
-      .hero::before{
+      .hero-art{
         top:auto;
         right:-14%;
         bottom:54px;
         width:116%;
-        aspect-ratio:3 / 1;
         transform:none;
-        background:
-          linear-gradient(90deg,rgba(255,255,255,.96) 0%,rgba(255,255,255,.58) 16%,rgba(255,255,255,.04) 48%,rgba(255,255,255,0) 70%),
-          url("hero-lena-sloss-red.webp?v=20261016a") center / cover no-repeat;
-        opacity:.92;
+      }
+
+      .hero-art img{
+        opacity:.96;
+      }
+
+      .hero-art::after{
+        background:linear-gradient(90deg,rgba(255,255,255,.96) 0%,rgba(255,255,255,.54) 17%,rgba(255,255,255,.04) 48%,rgba(255,255,255,0) 72%);
       }
 
       .hero-copy,
@@ -661,6 +673,10 @@
   <main class="shell">
 
     <section id="hero" class="hero">
+      <div class="hero-art" aria-hidden="true">
+        <img src="hero-lena-sloss-red.webp?v=20261016b" alt="">
+      </div>
+
       <div class="hero-copy">
         <div class="eyebrow">Artist Portfolio · Netherlands</div>
         <h1>Lena Sloss</h1>
